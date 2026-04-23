@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fixed Navigation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <h2 class="logo">Sheetal</h2>
+
+  <button id="menuBtn" class="menu-btn" aria-label="Open Menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<!-- Side Menu -->
+<nav id="menu" class="menu" aria-hidden="true">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Packers and Movers Bangalore</a></li>
+    <li><a href="#">Packers Movers Delhi</a></li>
+    <li><a href="#">Advertise with Us</a></li>
+    <li><a href="#">Packers Mumbai</a></li>
+  </ul>
+</nav>
+
+<!-- Overlay -->
+<div id="overlay" class="overlay"></div>
+
+<!-- Dummy Content -->
+<main class="content">
+  <h1>Welcome</h1>
+  <p>This is your page content. Scroll should lock when menu opens.</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

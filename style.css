@@ -1,0 +1,134 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Prevent scroll when menu open */
+body.no-scroll {
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  z-index: 1100;
+}
+
+/* Logo */
+.logo {
+  font-size: 18px;
+}
+
+/* Hamburger Button */
+.menu-btn {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* Hamburger lines */
+.menu-btn span {
+  height: 3px;
+  width: 24px;
+  background: white;
+  transition: 0.3s ease;
+}
+
+/* Animate to X */
+.menu-btn.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Side Menu */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100%;
+  background: #222;
+  padding-top: 80px;
+  transition: left 0.3s ease;
+  z-index: 1050;
+}
+
+/* Active Menu */
+.menu.active {
+  left: 0;
+}
+
+/* Menu List */
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  border-bottom: 1px solid #333;
+}
+
+.menu a {
+  display: block;
+  padding: 16px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.2s;
+}
+
+.menu a:hover {
+  background: #333;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Content spacing (to avoid header overlap) */
+.content {
+  padding: 100px 20px;
+}
