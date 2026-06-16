@@ -1,44 +1,190 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fixed Navigation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
 
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Boxicons -->
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+</head>
 <body>
 
-<header class="header">
-  <h2 class="logo">Sheetal</h2>
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#" class="logo">Portfolio</a>
 
-  <button id="menuBtn" class="menu-btn" aria-label="Open Menu" aria-expanded="false">
-    <span></span>
-    <span></span>
-    <span></span>
-  </button>
-</header>
+    <i class='bx bx-menu' id="menu-icon"></i>
 
-<!-- Side Menu -->
-<nav id="menu" class="menu" aria-hidden="true">
-  <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Packers and Movers Bangalore</a></li>
-    <li><a href="#">Packers Movers Delhi</a></li>
-    <li><a href="#">Advertise with Us</a></li>
-    <li><a href="#">Packers Mumbai</a></li>
-  </ul>
-</nav>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<!-- Overlay -->
-<div id="overlay" class="overlay"></div>
+  <!-- HOME SECTION -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Souradipta</h1>
+      <h3>And I'm a <span class="multiple-text"></span></h3>
 
-<!-- Dummy Content -->
-<main class="content">
-  <h1>Welcome</h1>
-  <p>This is your page content. Scroll should lock when menu opens.</p>
-</main>
+      <p>
+        Passionate Full Stack Developer creating responsive and interactive web applications using HTML, CSS, JavaScript, Node.js, Express, and MongoDB.
+      </p>
 
-<script src="script.js"></script>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/souradipta-patra-310669260/"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/InnovativeSoura"><i class='bx bxl-github'></i></a>
+      </div>
+
+      <a href="cv.pdf" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <img src="Passport Photo.png" alt="Souradipta">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="Passport Photo.png" alt="Souradipta">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+
+      <h3>Full Stack Developer</h3>
+
+      <p>
+        I build modern, responsive, and user-friendly websites with clean UI and scalable backend systems. I enjoy solving problems and learning new technologies.
+      </p>
+
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-container">
+
+      <div class="skills-box">
+        <i class='bx bxl-html5'></i>
+        <h3>HTML5</h3>
+        <p>Semantic and SEO-friendly webpage structures.</p>
+      </div>
+
+      <div class="skills-box">
+        <i class='bx bxl-css3'></i>
+        <h3>CSS3</h3>
+        <p>Responsive modern UI with Flexbox and Grid.</p>
+      </div>
+
+      <div class="skills-box">
+        <i class='bx bxl-javascript'></i>
+        <h3>JavaScript</h3>
+        <p>Interactive and dynamic frontend development.</p>
+      </div>
+
+      <div class="skills-box">
+        <i class='bx bxl-nodejs'></i>
+        <h3>Node.js</h3>
+        <p>Backend APIs and server-side applications.</p>
+      </div>
+
+      <div class="skills-box">
+        <i class='bx bxl-mongodb'></i>
+        <h3>MongoDB</h3>
+        <p>NoSQL database integration and management.</p>
+      </div>
+
+      <div class="skills-box">
+        <i class='bx bxl-github'></i>
+        <h3>GitHub</h3>
+        <p>Version control and project collaboration.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="projects-container">
+
+      <div class="project-box">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="">
+        <div class="project-layer">
+          <h4>Portfolio Website</h4>
+          <p>Responsive personal portfolio with animations.</p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="">
+        <div class="project-layer">
+          <h4>Authentication System</h4>
+          <p>JWT login/signup with MongoDB integration.</p>
+        </div>
+      </div>
+
+      <div class="project-box">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="">
+        <div class="project-layer">
+          <h4>CRUD Dashboard</h4>
+          <p>Admin dashboard with full CRUD operations.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form>
+      <div class="input-box">
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email Address">
+      </div>
+
+      <div class="input-box">
+        <input type="number" placeholder="Mobile Number">
+        <input type="text" placeholder="Email Subject">
+      </div>
+
+      <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2026 by Souradipta | All Rights Reserved.</p>
+    </div>
+
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
